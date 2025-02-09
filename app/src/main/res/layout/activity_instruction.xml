@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blueinstru">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/imageFilterView"
+        android:layout_width="338dp"
+        android:layout_height="575dp"
+        android:scaleType="fitXY"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301"
+        app:srcCompat="@xml/rectangle" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="284dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#03A9F4"
+        android:fontFamily="@font/blue"
+        android:text="Proceed"
+        android:textColorLink="#FF5722"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFilterView" />
+
+    <ScrollView
+        android:layout_width="309dp"
+        android:layout_height="553dp"
+        android:fillViewport="true"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageFilterView"
+        app:layout_constraintEnd_toEndOf="@+id/imageFilterView"
+        app:layout_constraintStart_toStartOf="@+id/imageFilterView"
+        app:layout_constraintTop_toTopOf="@+id/imageFilterView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blue"
+                android:text=""
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blue"
+                android:text="Please kindly follow every steps/instructions in order to use our online payment method:"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blue"
+                android:text="Step 1: Pick how much would you like to pay"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blue"
+                android:text="Step 2: Upon picking, there would be a generated QR Code that would be used to be paid through the GCash App. Take a screenshot or download the given QR code."
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blue"
+                android:text="Step 3: Scan the generated QR Code in the GCash application and download or take a screenshot of the payment."
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blue"
+                android:text="Step 4: Upload the photo of the payment using the Esure Application. There is a provided inbox where you could upload the photo."
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="255dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blue"
+                android:text="Step 5: Please kindly wait for the admin to confirm your payment. Shortly you would have your exact amount provided. Note: if it was not confirmed in the next 5 minutes you could retrieve your payment in Administration office."
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/blue"
+                android:text="Thank you for choosing the Online Payment"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
